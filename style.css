@@ -96,7 +96,7 @@ body {
   margin: 30px 0 10px;
 }
 
-/* Boxes &  Bottom Text */
+/* Boxes & Bottom Text */
 #timeline ul li > div {
   width: 350px;
   margin-bottom: 5px;
@@ -109,15 +109,7 @@ body {
 #timeline ul li > div p {
   padding-top: 20px;
 }
-#timeline ul li:nth-child(2n + 0) > div {
-  margin-left: 70px;
-  transform: translateX(60px);
-}
-#timeline ul li:nth-child(4n + 0) > div {
-  margin-left: -414px;
-  transform: translateX(-60px);
-}
-#timeline ul li > div > div  {
+#timeline ul li > div > div {
   position: relative;
   top: -14px;
   background: var(--secondary-color);
@@ -133,15 +125,10 @@ body {
   top: 0;
   border-style: solid;
 }
-#timeline ul li:nth-child(2n + 0) > div:before {
+#timeline ul li > div:before {
   left: -15px;
   border-width: 8px 16px 8px 0;
   border-color: transparent var(--secondary-color) transparent transparent;
-}
-#timeline ul li:nth-child(4n + 0) > div:before {
-  transform: translateX(365px);
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent var(--secondary-color);
 }
 
 /* Show Boxes */
@@ -160,11 +147,6 @@ body {
   #timeline ul li > div > div {
     width: 200px;
   }
-  #timeline ul li:nth-child(4n + 0) > div {
-    margin-left: -264px;
-  }
-  #timeline ul li:nth-child(4n + 0) > div:before {
-    transform: translateX(215px);
 }
 
 @media (max-width: 600px) {
@@ -181,15 +163,6 @@ body {
   #timeline ul h3 {
     text-align: unset;
     padding-left: 30px;
-  }
-  #timeline ul li:nth-child(4n + 0) > div {
-    margin-left: 70px;
-    transform: translateX(60px);
-  }
-  #timeline ul li:nth-child(4n + 0) > div:before {
-    transform: translateX(0);
-    border-width: 8px 16px 8px 0;
-    border-color: transparent var(--secondary-color) transparent transparent;
   }
   #timeline ul li.show > div {
     transform: none;
